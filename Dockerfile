@@ -1,7 +1,7 @@
 FROM python:3-slim
 
 LABEL maintainer="teake.nutma@gmail.com"
-LABEL version="1.2"
+LABEL version="1.3"
 LABEL description="Image for building Sphinx documentation"
 
 RUN apt-get update && apt-get install -y \
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
   && pip --no-cache-dir install \
     sphinx \
     sphinx_rtd_theme \
+    docxsphinx \
   && rm -rf /var/lib/apt/lists/*
 
 CMD [ "/bin/bash" ]
