@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
   && pip --no-cache-dir install \
     sphinx \
     sphinx_rtd_theme \
-    docxsphinx \
-    git+https://github.com/teake/docxbuilder.git@18a7094dd5832ce3a08ef452b5fcedd4eb397231 \
+    sphinx-gitstamp \
+    git+https://github.com/teake/docxbuilder.git@8fa015c86551a7c216571f25fd77f450ce1e1d09 \
   && rm -rf /var/lib/apt/lists/*
 
 CMD [ "/bin/bash" ]
