@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     sphinx \
     sphinx_rtd_theme \
     sphinx-gitstamp \
+    sphinx-copybutton \
     git+https://github.com/teake/docxbuilder.git@8fa015c86551a7c216571f25fd77f450ce1e1d09 \
   && rm -rf /var/lib/apt/lists/*
 
